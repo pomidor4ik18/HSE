@@ -1,0 +1,1384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>turret.Turret</title>
+    <meta name="generator" content="pydoctor 24.11.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          turret <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="turret.Turret.html" class="internal-link" title="This class"><wbr></wbr>Turret</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="turret.Turret.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#draw" class="internal-link" title="turret.Turret.draw">draw</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#load_images" class="internal-link" title="turret.Turret.load_images">load<wbr></wbr>_images</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pick_target" class="internal-link" title="turret.Turret.pick_target">pick<wbr></wbr>_target</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#play_animation" class="internal-link" title="turret.Turret.play_animation">play<wbr></wbr>_animation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#update" class="internal-link" title="turret.Turret.update">update</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#upgrade" class="internal-link" title="turret.Turret.upgrade">upgrade</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#angle" class="internal-link" title="turret.Turret.angle">angle</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#animation_list" class="internal-link" title="turret.Turret.animation_list">animation<wbr></wbr>_list</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#cooldown" class="internal-link" title="turret.Turret.cooldown">cooldown</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#frame_index" class="internal-link" title="turret.Turret.frame_index">frame<wbr></wbr>_index</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#image" class="internal-link" title="turret.Turret.image">image</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#last_shot" class="internal-link" title="turret.Turret.last_shot">last<wbr></wbr>_shot</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#original_image" class="internal-link" title="turret.Turret.original_image">original<wbr></wbr>_image</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#range" class="internal-link" title="turret.Turret.range">range</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#range_image" class="internal-link" title="turret.Turret.range_image">range<wbr></wbr>_image</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#range_rect" class="internal-link" title="turret.Turret.range_rect">range<wbr></wbr>_rect</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#rect" class="internal-link" title="turret.Turret.rect">rect</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#selected" class="internal-link" title="turret.Turret.selected">selected</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#shot_fx" class="internal-link" title="turret.Turret.shot_fx">shot<wbr></wbr>_fx</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#sprite_sheets" class="internal-link" title="turret.Turret.sprite_sheets">sprite<wbr></wbr>_sheets</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#target" class="internal-link" title="turret.Turret.target">target</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tile_x" class="internal-link" title="turret.Turret.tile_x">tile<wbr></wbr>_x</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tile_y" class="internal-link" title="turret.Turret.tile_y">tile<wbr></wbr>_y</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#update_time" class="internal-link" title="turret.Turret.update_time">update<wbr></wbr>_time</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#upgrade_level" class="internal-link" title="turret.Turret.upgrade_level">upgrade<wbr></wbr>_level</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#x" class="internal-link" title="turret.Turret.x">x</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#y" class="internal-link" title="turret.Turret.y">y</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="index.html" class="internal-link" title="The parent of this class">turret</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="turret.Turret.html" class="internal-link" title="turret.Turret"><wbr></wbr>Turret</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapseSideBar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <div id="main" class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">turret</a></code><wbr></wbr>.<code><a href="turret.Turret.html" class="internal-link" title="turret.Turret">Turret</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Turret</span>(pg.sprite.Sprite):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="turret.Turret.__init__">Turret(sprite_sheets, tile_x, tile_y, shot_fx)</a></code></p>
+          <p><a href="classIndex.html#turret.Turret">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Класс Turret представляет турель в игре, которая может стрелять по врагам и обновляться.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="turret.Turret.__init__">__init__</a></code></td>
+    <td>Инициализация турели.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#draw" class="internal-link" title="turret.Turret.draw">draw</a></code></td>
+    <td>Отрисовка турели и её радиуса действия (если выделена).</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#load_images" class="internal-link" title="turret.Turret.load_images">load<wbr></wbr>_images</a></code></td>
+    <td>Загрузка изображений из спрайт-листа.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#pick_target" class="internal-link" title="turret.Turret.pick_target">pick<wbr></wbr>_target</a></code></td>
+    <td>Выбор ближайшей цели в радиусе действия турели.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#play_animation" class="internal-link" title="turret.Turret.play_animation">play<wbr></wbr>_animation</a></code></td>
+    <td>Воспроизведение анимации стрельбы турели.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#update" class="internal-link" title="turret.Turret.update">update</a></code></td>
+    <td>Обновление состояния турели, включая выбор цели и анимацию.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#upgrade" class="internal-link" title="turret.Turret.upgrade">upgrade</a></code></td>
+    <td>Улучшение турели: увеличение уровня, радиуса действия и обновление изображений.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#angle" class="internal-link" title="turret.Turret.angle">angle</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#animation_list" class="internal-link" title="turret.Turret.animation_list">animation<wbr></wbr>_list</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#cooldown" class="internal-link" title="turret.Turret.cooldown">cooldown</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#frame_index" class="internal-link" title="turret.Turret.frame_index">frame<wbr></wbr>_index</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#image" class="internal-link" title="turret.Turret.image">image</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#last_shot" class="internal-link" title="turret.Turret.last_shot">last<wbr></wbr>_shot</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#original_image" class="internal-link" title="turret.Turret.original_image">original<wbr></wbr>_image</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#range" class="internal-link" title="turret.Turret.range">range</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#range_image" class="internal-link" title="turret.Turret.range_image">range<wbr></wbr>_image</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#range_rect" class="internal-link" title="turret.Turret.range_rect">range<wbr></wbr>_rect</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#rect" class="internal-link" title="turret.Turret.rect">rect</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#selected" class="internal-link" title="turret.Turret.selected">selected</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#shot_fx" class="internal-link" title="turret.Turret.shot_fx">shot<wbr></wbr>_fx</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#sprite_sheets" class="internal-link" title="turret.Turret.sprite_sheets">sprite<wbr></wbr>_sheets</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#target" class="internal-link" title="turret.Turret.target">target</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#tile_x" class="internal-link" title="turret.Turret.tile_x">tile<wbr></wbr>_x</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#tile_y" class="internal-link" title="turret.Turret.tile_y">tile<wbr></wbr>_y</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#update_time" class="internal-link" title="turret.Turret.update_time">update<wbr></wbr>_time</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#upgrade_level" class="internal-link" title="turret.Turret.upgrade_level">upgrade<wbr></wbr>_level</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#x" class="internal-link" title="turret.Turret.x">x</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#y" class="internal-link" title="turret.Turret.y">y</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="turret.Turret.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, sprite_sheets, tile_x, tile_y, shot_fx)</span>:
+    
+    <a class="headerLink" href="#__init__" title="turret.Turret.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Инициализация турели.</p>
+<dl class="rst-docutils">
+<dt>Args:</dt>
+<dd>sprite_sheets (list): Список спрайтов для анимации турели.
+tile_x (int): Координата X на сетке тайлов.
+tile_y (int): Координата Y на сетке тайлов.
+shot_fx (pygame.mixer.Sound): Звук выстрела.</dd>
+</dl>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="turret.Turret.draw">
+    
+  </a>
+  <a name="draw">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">draw</span><span class="function-signature">(self, surface)</span>:
+    
+    <a class="headerLink" href="#draw" title="turret.Turret.draw">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Отрисовка турели и её радиуса действия (если выделена).</p>
+<dl class="rst-docutils">
+<dt>Args:</dt>
+<dd>surface (pygame.Surface): Поверхность, на которой нужно нарисовать турель.</dd>
+</dl>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="turret.Turret.load_images">
+    
+  </a>
+  <a name="load_images">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">load_images</span><span class="function-signature">(self, sprite_sheet)</span>:
+    
+    <a class="headerLink" href="#load_images" title="turret.Turret.load_images">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Загрузка изображений из спрайт-листа.</p>
+<dl class="rst-docutils">
+<dt>Args:</dt>
+<dd>sprite_sheet (pygame.Surface): Спрайт-лист для текущего уровня турели.</dd>
+<dt>Returns:</dt>
+<dd>list: Список изображений для анимации турели.</dd>
+</dl>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="turret.Turret.pick_target">
+    
+  </a>
+  <a name="pick_target">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">pick_target</span><span class="function-signature">(self, enemy_group)</span>:
+    
+    <a class="headerLink" href="#pick_target" title="turret.Turret.pick_target">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Выбор ближайшей цели в радиусе действия турели.</p>
+<dl class="rst-docutils">
+<dt>Args:</dt>
+<dd>enemy_group (pygame.sprite.Group): Группа врагов.</dd>
+</dl>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="turret.Turret.play_animation">
+    
+  </a>
+  <a name="play_animation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">play_animation</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#play_animation" title="turret.Turret.play_animation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Воспроизведение анимации стрельбы турели.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="turret.Turret.update">
+    
+  </a>
+  <a name="update">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">update</span><span class="function-signature">(self, enemy_group, world)</span>:
+    
+    <a class="headerLink" href="#update" title="turret.Turret.update">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Обновление состояния турели, включая выбор цели и анимацию.</p>
+<dl class="rst-docutils">
+<dt>Args:</dt>
+<dd>enemy_group (pygame.sprite.Group): Группа врагов.
+world (World): Объект игрового мира.</dd>
+</dl>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="turret.Turret.upgrade">
+    
+  </a>
+  <a name="upgrade">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">upgrade</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#upgrade" title="turret.Turret.upgrade">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Улучшение турели: увеличение уровня, радиуса действия и обновление изображений.</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.angle">
+    
+  </a>
+  <a name="angle">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">angle</span> =
+    
+    <a class="headerLink" href="#angle" title="turret.Turret.angle">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.animation_list">
+    
+  </a>
+  <a name="animation_list">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">animation_list</span> =
+    
+    <a class="headerLink" href="#animation_list" title="turret.Turret.animation_list">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.cooldown">
+    
+  </a>
+  <a name="cooldown">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">cooldown</span> =
+    
+    <a class="headerLink" href="#cooldown" title="turret.Turret.cooldown">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.frame_index">
+    
+  </a>
+  <a name="frame_index">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">frame_index</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#frame_index" title="turret.Turret.frame_index">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.image">
+    
+  </a>
+  <a name="image">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">image</span> =
+    
+    <a class="headerLink" href="#image" title="turret.Turret.image">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.last_shot">
+    
+  </a>
+  <a name="last_shot">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">last_shot</span> =
+    
+    <a class="headerLink" href="#last_shot" title="turret.Turret.last_shot">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.original_image">
+    
+  </a>
+  <a name="original_image">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">original_image</span> =
+    
+    <a class="headerLink" href="#original_image" title="turret.Turret.original_image">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.range">
+    
+  </a>
+  <a name="range">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">range</span> =
+    
+    <a class="headerLink" href="#range" title="turret.Turret.range">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.range_image">
+    
+  </a>
+  <a name="range_image">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">range_image</span> =
+    
+    <a class="headerLink" href="#range_image" title="turret.Turret.range_image">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.range_rect">
+    
+  </a>
+  <a name="range_rect">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">range_rect</span> =
+    
+    <a class="headerLink" href="#range_rect" title="turret.Turret.range_rect">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.rect">
+    
+  </a>
+  <a name="rect">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">rect</span> =
+    
+    <a class="headerLink" href="#rect" title="turret.Turret.rect">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.selected">
+    
+  </a>
+  <a name="selected">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">selected</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#selected" title="turret.Turret.selected">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.shot_fx">
+    
+  </a>
+  <a name="shot_fx">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">shot_fx</span> =
+    
+    <a class="headerLink" href="#shot_fx" title="turret.Turret.shot_fx">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.sprite_sheets">
+    
+  </a>
+  <a name="sprite_sheets">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">sprite_sheets</span> =
+    
+    <a class="headerLink" href="#sprite_sheets" title="turret.Turret.sprite_sheets">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.target">
+    
+  </a>
+  <a name="target">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">target</span> =
+    
+    <a class="headerLink" href="#target" title="turret.Turret.target">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.tile_x">
+    
+  </a>
+  <a name="tile_x">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tile_x</span> =
+    
+    <a class="headerLink" href="#tile_x" title="turret.Turret.tile_x">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.tile_y">
+    
+  </a>
+  <a name="tile_y">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tile_y</span> =
+    
+    <a class="headerLink" href="#tile_y" title="turret.Turret.tile_y">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.update_time">
+    
+  </a>
+  <a name="update_time">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">update_time</span> =
+    
+    <a class="headerLink" href="#update_time" title="turret.Turret.update_time">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.upgrade_level">
+    
+  </a>
+  <a name="upgrade_level">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">upgrade_level</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#upgrade_level" title="turret.Turret.upgrade_level">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.x">
+    
+  </a>
+  <a name="x">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">x</span> =
+    
+    <a class="headerLink" href="#x" title="turret.Turret.x">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="turret.Turret.y">
+    
+  </a>
+  <a name="y">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">y</span> =
+    
+    <a class="headerLink" href="#y" title="turret.Turret.y">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container-fluid">
+    <a href="index.html">API Documentation</a> for turret,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    24.11.1 at 2024-12-19 01:56:10.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
